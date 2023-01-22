@@ -1,0 +1,67 @@
+<div class="card">
+    <div class="card-header">
+        {{pageTitle + ' : '  + product?.productName}}
+    </div>
+    <div class="card-body" *ngIf="product">
+        <div class="row">
+             
+            <span class="col-md-2">
+                Product Name:
+            </span>
+            <span class="col-md-6">
+                {{product.productName}}
+            </span>
+        </div>
+        <div class="row">
+            
+            <span class="col-md-2">
+                Product Code:
+            </span>
+            <span class="col-md-6">
+                {{product.productCode}}
+            </span>
+        </div>
+        <div class="row">
+             
+            <span class="col-md-2">
+                Product Price:
+            </span>
+            <span class="col-md-6">
+                {{product.price}}
+            </span>
+        </div>
+        <div class="row">
+             
+            <span class="col-md-2">
+                Product Rating:
+            </span>
+            <span class="col-md-6">
+                <pm-star [rating]="product.starRating" > </pm-star>
+            </span>
+        </div>
+        <div class="row">
+            <span class="col-md-2">
+                Product Description:
+            </span>
+            <span class="col-md-6">
+                {{product.description}}
+            </span>
+        </div>
+        <div class="row">
+            <span class="col-md-2">
+                Product Image:
+            </span>
+            <span class="col-md-6">
+                <img [src]="product.imageUrl" style="width: 80px"/>
+            </span>
+        </div>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-outline-secondary"
+            style="width: 80px"
+            (click)="onBack()">
+            <i class="fa fa-chevron-left"></i>
+            Back
+        </button>
+    </div>
+</div>
