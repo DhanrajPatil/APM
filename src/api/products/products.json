@@ -20,6 +20,26 @@
     "imageUrl": "assets/images/garden_cart.png"
   },
   {
+    "productId": 3,
+    "productName": "Screw Driver",
+    "productCode": "GDN-0050",
+    "releaseDate": "January 19, 2023",
+    "description": "Screw Driver with single sharp",
+    "price": 25.80,
+    "starRating": 4.7,
+    "imageUrl": "assets/images/screwdriver.png"
+  },
+  {
+    "productId": 4,
+    "productName": "Spanner",
+    "productCode": "GDN-0078",
+    "releaseDate": "January 10, 2023",
+    "description": "Spanner having 10 number",
+    "price": 40.80,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/spanner.png"
+  },
+  {
     "productId": 5,
     "productName": "Hammer",
     "productCode": "TBX-0048",

@@ -27,7 +27,7 @@
                 Product Price:
             </span>
             <span class="col-md-6">
-                {{product.price}}
+                {{product.price | currency: 'INR' : 'symbol' : '1.2-2' }}
             </span>
         </div>
         <div class="row">
